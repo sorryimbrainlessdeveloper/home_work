@@ -1,0 +1,5 @@
+abstract class Animals {
+   abstract void run (double length);
+   abstract void jump (double length);
+   abstract void swim (double length);
+}

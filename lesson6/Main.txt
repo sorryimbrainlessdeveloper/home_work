@@ -1,0 +1,28 @@
+public class Main {
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        Cat1 cat1 = new Cat1();
+        Dog dog = new Dog();
+        Dog1 dog1 = new Dog1();
+
+        System.out.println("Cat:");
+        cat.run(150);
+        cat.jump(3);
+        cat.swim(1);
+        System.out.println("------------");
+        System.out.println("Dog:");
+        dog.run(700);
+        dog.jump(1);
+        dog.swim(5);
+        System.out.println("------------");
+        System.out.println("Cat1:");
+        cat1.run(200);
+        cat1.jump(3);
+        cat1.swim(2);
+        System.out.println("------------");
+        System.out.println("Dog1:");
+        dog1.run(600);
+        dog1.jump(2);
+        dog1.swim(50);
+    }
+}
