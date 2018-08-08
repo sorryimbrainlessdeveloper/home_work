@@ -1,0 +1,19 @@
+package geekbrains.java1.lesson7;
+
+public class Main {
+    public static void main(String[] args) {
+        Cat[] cats = new Cat[3];
+        cats[0] = new Cat("Barsik", 50, 0);
+        cats[1] = new Cat("Murzik", 40, 0);
+        cats[2] = new Cat("Lord Volan-de-Mort", 45, 0);
+
+        Plate plate = new Plate(10);
+
+        for (int i = 0; i < cats.length; i++) {
+            plate.info();
+            cats[i].eat(plate);
+            plate.info();
+            System.out.println("-------------------------------");
+        }
+    }
+}

@@ -1,0 +1,17 @@
+package geekbrains.java1.lesson7;
+
+public class Cat {
+    private String name;
+    private int appetite;
+    private int satiety;
+
+    public Cat(String name, int appetite, int satiety){
+        this.name = name;
+        this.appetite = appetite;
+        this.satiety = satiety;
+    }
+    public void eat(Plate p){
+        System.out.println(name + " хочет поесть. Смотрит в миску, а там...");
+        p.decreaseFood(appetite, satiety);
+    }
+}
