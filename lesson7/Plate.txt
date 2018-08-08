@@ -8,18 +8,18 @@ public class Plate {
     }
     public void decreaseFood(int n,int m){
         if(food < n){
-            System.out.println("Недостаточное количество еды, добавляем еду...");
+            System.out.println("Nedostatochnoe kolichestvo edi, dobavlyaem edu...");
             food += 100;
             food -= n;
             m += n;
-            System.out.println("Еды хватает. Кот поел, сытость равна " + m + ". Кот наелся.");
+            System.out.println("Edi hvataet. Kot poel, sitost' ravna " + m + ". Kot naelsya.");
         } else if(food >= n){
             food -= n;
             m += n;
-            System.out.println("Еды хватает. Кот поел, сытость равна " + m + ". Кот наелся.");
+            System.out.println("Edi hvataet. Kot poel, sitost' ravna " + m + ". Kot naelsya.");
         }
     }
     public void info(){
-        System.out.println("Количество еды = " + food + ".");
+        System.out.println("Kolichestvo edi = " + food + ".");
     }
 }
